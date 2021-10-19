@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <tittle></tittle>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Float four columns side by side */
+    .column {
+        margin-top: 29px;
+        float: left;
+        width: 70%;
+        padding: 0 10px;
+        margin-left: 0%;
+    }
+
+
+
+    /* Style the counter cards */
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /* this adds the "card" effect */
+        padding: 0px;
+        text-align: center;
+        background-color: cornflowerblue;
+        text-align: left;
+    }
+
+    /* Responsive columns - one column layout (vertical) on small screens */
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            margin-left: 0%;
+        }
+    }
+
+    .card h2 {
+        color: cornflowerblue;
+        margin-bottom: -10px;
+    }
+
+    .card p {
+        color: cornsilk;
+        margin-bottom: -15px;
+    }
+
+    .card hr {
+        margin-bottom: -2.5vh;
+        margin-top: 20px;
+
+    }
+
+    .header {
+        color: cornflowerblue;
+        font-size: xx-large;
+        text-transform: uppercase;
+    }
+
+    #pp {
+        margin: 0% 10%;
+    }
+
+    @media screen and (max-width: 600px) {
+        #pp {
+            margin: 0%;
+        }
+    }
+
+    .row {
+        padding: 5% 10%;
+    }
+
+    .card {
+        float: left;
+        width: 20%;
+
+        margin: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px 5px 0 0;
+    }
+
+    img {
+        transition: 1s;
+    }
+
+    /* Style the images inside the grid */
+    .card img {
+
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card img:hover {
+        opacity: 0.8;
+    }
+
+    .card:hover {
+        -ms-transform: scale(1.5);
+        /* IE 9 */
+        -webkit-transform: scale(1.5);
+        /* Safari 3-8 */
+        transform: scale(1.05);
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width: 800px) {
+        .card {
+            float: center;
+            width: 43%;
+
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+
+        }
+
+        .row {
+            padding: 2% 1%;
+            padding-left: 3.5%;
+        }
+
+        #pt {
+            display: none;
+        }
+
+
+    }
+
+    @media screen and (max-width: 800px) {
+        #ct {
+            margin-right: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+            color: grey;
+        }
+    }
+
+    #ct {
+        margin-left: 15%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+    }
+
+    #pt {
+        margin-left: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+    }
+</style>
+
+<body>
+
+    <section id="bannar" style="height: 50vh;">
+        <div class="topnav" id="myTopnav">
+            <a href="#"></a>
+
+            <a href="contact.html">Contact</a>
+            <a href="portfolio.html" style="color: cornflowerblue;">Portfolio</a>
+            <a href="skills.html" >Skills</a>
+            <a href="about.html" style="color: #000000b9;">About</a>
+            <a href="index.html" style="color: #000000b9;" class="active">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="hero-text">
+            <p class="header" style="color: cornflowerblue;  ">My Prejects</p>
+        </div>
+    </section>
+
+
+    <div class="row">
+        <a href="#">
+            <div class="card">
+
+                <div class="container">
+                    <img src="image/4.png" alt="Avatar" style="width:100% ">
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card">
+                <img src="image/4.png" alt="Avatar" style="width:100% ">
+                <div class="container">
+
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card">
+                <img src="image/4.png" alt="Avatar" style="width:100% ">
+                <div class="container">
+
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="card">
+                <img src="image/4.png" alt="Avatar" style="width:100% ">
+                <div class="container">
+
+                </div>
+            </div>
+        </a>
+    </div>
+    <br><br>
+    <div class="scocial">
+        <i class="fa fa-instagram fa-2x "></i>
+        <i class="fa fa-facebook fa-2x"></i>
+        <i class="fa fa-github fa-2x"></i>
+        <i class="fa fa-twitter fa-2x"></i>
+    </div>
+    <div class="copyright">
+        Ahmed Ahon &#169 All Right Reserve
+    </div>
+    <br>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

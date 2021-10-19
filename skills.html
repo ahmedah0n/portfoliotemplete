@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <tittle></tittle>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <style>
+        ::selection {
+            color: #fff;
+            background: transparent;
+        }
+
+        .skill-bars {
+            padding: 25px 30px;
+            width: 600px;
+            background: transparent;
+            border-radius: 10px;
+            margin-left: 20%;
+            margin-top: 10%;
+        }
+
+        @media screen and (max-width: 700px) {
+            .skill-bars {
+                margin-top: 150px;
+                width: 100%;
+                margin-left: 0%;
+            }
+        }
+
+        .skill-bars .bar {
+            margin: 20px 0;
+        }
+
+        .skill-bars .bar:first-child {
+            margin-top: 0px;
+        }
+
+        .skill-bars .bar .info {
+            margin-bottom: 5px;
+        }
+
+        .skill-bars .bar .info span {
+            font-weight: 500;
+            font-size: 17px;
+            opacity: 0;
+            animation: showText 0.5s 1s linear forwards;
+        }
+
+        @keyframes showText {
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .skill-bars .bar .progress-line {
+            height: 10px;
+            width: 100%;
+            background: #f0f0f0;
+            position: relative;
+            transform: scaleX(0);
+            transform-origin: left;
+            border-radius: 10px;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.014),
+                0 1px rgba(255, 255, 255, 0.8);
+            animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+        }
+
+        @keyframes animate {
+            100% {
+                transform: scaleX(1);
+            }
+        }
+
+        .bar .progress-line span {
+            height: 100%;
+            position: absolute;
+            border-radius: 10px;
+            transform: scaleX(0);
+            transform-origin: left;
+            background: cornflowerblue;
+            animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+        }
+
+        .bar .progress-line.html span {
+            width: 90%;
+        }
+
+        .bar .progress-line.css span {
+            width: 85%;
+        }
+
+        .bar .progress-line.bootstrap span {
+            width: 80%;
+        }
+
+        .bar .progress-line.wordpress span {
+            width: 70%;
+        }
+
+        .bar .progress-line.mysql span {
+            width: 90%;
+        }
+
+        .progress-line span::before {
+            position: absolute;
+            content: "";
+            top: -10px;
+            right: 0;
+            height: 0;
+            width: 0;
+            border: 7px solid transparent;
+            border-bottom-width: 0px;
+            border-right-width: 0px;
+            border-top-color: #000;
+            opacity: 0;
+            animation: showText2 0.5s 1.5s linear forwards;
+        }
+
+        .progress-line span::after {
+            position: absolute;
+            top: -28px;
+            right: 0;
+            font-weight: 500;
+            background: #000;
+            color: #fff;
+            padding: 1px 8px;
+            font-size: 12px;
+            border-radius: 3px;
+            opacity: 0;
+            animation: showText2 0.5s 1.5s linear forwards;
+        }
+
+        @keyframes showText2 {
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .progress-line.html span::after {
+            content: "90%";
+        }
+
+        .progress-line.css span::after {
+            content: "85%";
+        }
+
+        .progress-line.bootstrap span::after {
+            content: "80%";
+        }
+
+        .progress-line.wordpress span::after {
+            content: "70%";
+        }
+
+        .progress-line.mysql span::after {
+            content: "90%";
+        }
+
+        #bannar {
+            background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.795)), url(image/1.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+
+        }
+        body{
+            background-color: #272727;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="bannar">
+        <div class="topnav" id="myTopnav">
+            <a href="#"></a>
+
+            <a href="contact.html">Contact</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="about.html">About</a>
+            <a href="index.html">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="hero-text">
+            <p class="header" style="color: cornflowerblue; text-align: center; font-size: 50px; ">My Skills</p>
+        </div>
+
+        <div class="skill-bars" id="skill-bar">
+            <div class="bar">
+                <div class="info">
+                    <span style="color: white;">HTML5</span>
+                </div>
+                <div class="progress-line html">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span style="color: white;">CSS3</span>
+                </div>
+                <div class="progress-line css">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span style="color: white;">Bootstrap</span>
+                </div>
+                <div class="progress-line bootstrap">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span style="color: white;">Wordpress</span>
+                </div>
+                <div class="progress-line wordpress">
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="scocial">
+            <i class="fa fa-instagram fa-2x "></i>
+            <i class="fa fa-facebook fa-2x"></i>
+            <i class="fa fa-github fa-2x"></i>
+            <i class="fa fa-twitter fa-2x"></i>
+        </div>
+        <div class="copyright">
+            Ahmed Ahon &#169 All Right Reserve
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

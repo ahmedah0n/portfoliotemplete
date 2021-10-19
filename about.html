@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <tittle></tittle>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Float four columns side by side */
+    .column {
+        margin-top: 29px;
+        float: left;
+        width: 70%;
+        padding: 0 10px;
+        margin-left: 15%;
+    }
+
+
+
+    /* Style the counter cards */
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /* this adds the "card" effect */
+        padding: 16px;
+        text-align: center;
+        background-color: #414141;
+        text-align: left;
+    }
+
+    /* Responsive columns - one column layout (vertical) on small screens */
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            margin-left: 0%;
+        }
+    }
+
+    .card h2 {
+        color: cornflowerblue;
+        margin-bottom: -10px;
+    }
+
+    .card p {
+        color: cornsilk;
+        margin-bottom: -15px;
+    }
+
+    .card hr {
+        margin-bottom: -2.5vh;
+        margin-top: 20px;
+
+    }
+
+    .header {
+        color: cornflowerblue;
+        font-size: xx-large;
+        text-transform: uppercase;
+    }
+
+    #pp {
+        margin: 0% 10%;
+    }
+
+    @media screen and (max-width: 600px) {
+        #pp {
+            margin: 0%;
+        }
+    }
+</style>
+
+<body>
+
+    <section id="bannar" style="height: 50vh;">
+        <div class="topnav" id="myTopnav">
+            <a href="#"></a>
+
+            <a href="contact.html">Contact</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="skills.html">Skills</a>
+            <a href="about.html" style="color: cornflowerblue;">About</a>
+            <a href="index.html" style="color: #000000b9;" class="active">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="hero-text">
+            <p class="header" style="color: cornflowerblue; margin-top: -3%; ">Bio</p>
+            <p class="bio" id="pp"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maxime, minima vel hic quas quae
+                inventore, numquam necessitatibus sint possimus consectetur porro omnis nobis excepturi facilis ut optio
+                eaque repellendus magni? </p>
+        </div>
+    </section>
+    <br><br><br>
+    <div class="column">
+        <div class="card">
+            <h2>2017-Current</h2>
+            <p>Micrisoft</p>
+            <p>Front End Develooper</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum explicabo quaerat veritatis nobis eius
+                magni neque recusandae architecto sequi commodi modi voluptas fugiat harum, earum, assumenda
+                reprehenderit impedit dicta officia.</p>
+            <hr style="color: cornflowerblue;">
+        </div>
+    </div>
+    <br><br><br>
+    <div class="column">
+        <div class="card">
+            <h2>2017-Current</h2>
+            <p>Micrisoft</p>
+            <p>Front End Develooper</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum explicabo quaerat veritatis nobis eius
+                magni neque recusandae architecto sequi commodi modi voluptas fugiat harum, earum, assumenda
+                reprehenderit impedit dicta officia.</p>
+            <hr style="color: cornflowerblue;">
+        </div>
+    </div>
+    <br><br><br>
+    <div class="column">
+        <div class="card">
+            <h2>2017-Current</h2>
+            <p>Micrisoft</p>
+            <p>Front End Develooper</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum explicabo quaerat veritatis nobis eius
+                magni neque recusandae architecto sequi commodi modi voluptas fugiat harum, earum, assumenda
+                reprehenderit impedit dicta officia.</p>
+            <hr style="color: cornflowerblue;">
+        </div>
+    </div>
+    <br><br><br>
+
+
+
+
+
+    <div class="scocial">
+        <i class="fa fa-instagram fa-2x "></i>
+        <i class="fa fa-facebook fa-2x"></i>
+        <i class="fa fa-github fa-2x"></i>
+        <i class="fa fa-twitter fa-2x"></i>
+    </div>
+    <div class="copyright" style="margin-top:47%;">
+        Ahmed Ahon &#169 All Right Reserve
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
